@@ -24,7 +24,7 @@ n = size(A, 1);
 if size(A, 2) ~= n
 	error('A must be square')
 end
-if length(b) ~= n || length(x) ~= n
+if size(b, 1) ~= n || size(x, 1) ~= n
 	error('dimensions of A, b or x do not match')
 end
 M = size(b, 2);
